@@ -1,0 +1,178 @@
+
+body{
+    margin: 0px;
+}
+@keyframes mybanner {
+    25%{ background-image:url(bugati.jpeg); }
+    50%{ background-image:url(lamborgini.jpeg); }
+    75%{ background-image:url(roll\ royce.jpeg); }
+}
+h1{
+    color: red;
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+}
+a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+}
+li:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+#banner{
+    height:450px;
+    background-size:50% 100%;
+    background-image:url(koenigsegg\ agera.jpeg);
+    animation:mybanner;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+ }
+ ul{
+    background-image:linear-gradient(to right, darkblue,purple, red) ;
+    margin: 0px;
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: sticky;
+    top: 0px;
+ }
+ li{
+   padding: 15px 40px 15px ;
+ }
+ #container{
+    width: 80%;
+    margin: auto;
+    min-height: 500px;
+ }
+ p{
+    text-align: justify;
+ }
+ .fourimage{
+        margin: 2%;
+        width: 20%;
+        height: 250px;
+        transition: border-radius 1s;
+ }
+ .fourimage:hover{
+         opacity: 0.5;
+         cursor: pointer;
+         border-radius: 100px;
+ }
+ footer{
+    background-color: black;
+    opacity: 0.8;
+    min-height: 150px;
+    padding: 20px;
+    color: white;
+    text-align: center !important;
+    font-size: 18px;
+ }
+ footer p{
+    text-align: center !important;
+ }
+ #service{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+        margin: 40px 0px 70px;
+ }
+ .myservice{
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0px 0px 5px grey;
+ }
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.purple{
+    color: purple;
+}
+#about{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#aboutphoto{
+    width: 280px;
+    height: 300px;
+    margin: 30px;
+}
+#about p{
+    margin: 30px;
+}
+.row{
+    padding: 10px;
+}
+.text-center{
+    text-align: center;
+    padding: 10px;
+}
+.smallinput{
+    height: 28px;
+    width: 100%;
+    padding: 3px;
+}
+fieldset{
+    width: 400px;
+    margin: 50px auto 50px;
+    padding: 15px;
+    border: 10px solid rgb(41, 4, 186);
+    border-radius: 10px;
+}
+legend{
+    background-color: rgb(82, 33, 206);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding:6px 20px 6px;
+}
+button{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 7px 20px 7px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb( 155, 11, 28);
+    border-radius: 50%;
+}
+.biginput{
+    height: 70px;
+    width: 100%;
+}
+@media screen and ( min-width:1px)and ( max-width:600px){
+    .fourimage{ width: 100%;}
+    #banner{ height: 200px;}
+    h1{ font-size: 30px;}
+    li{ padding: 8px 5px 8px;}
+    a{ font-size: 14px;}
+    #service{ grid-template-columns: auto;}
+    #about{ grid-template-columns: auto;}
+    fieldset{ width: 90%;}
+}
+@media screen and ( min-width:600px)and ( max-width:900px){
+    .fourimage{ width: 45%;}
+    #banner{ height: 250px;}
+    h1{ font-size: 50px;}
+    li{ padding: 8px 8px 8px;}
+    a{ font-size: 16px;}
+    #service{ grid-template-columns: auto auto;}
+    #about{ grid-template-columns: auto;}
+    fieldset{ width: 60%;}
+}
+@media screen and ( min-width:900px)and ( max-width:1100px){
+    .fourimage{ width: 26%;}
+    #banner{ height: 250px;}
+    h1{ font-size: 55px;}
+    li{ padding: 12px;}
+    a{ font-size: 18px;}
+    #service{ grid-template-columns: auto auto;}
+    #about{ grid-template-columns: auto auto;}
+}

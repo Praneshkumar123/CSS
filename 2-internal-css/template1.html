@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            body{
+                margin: 0px;
+            }
+            @keyframes mybanner {
+                25%{ background-image:url(images.jpeg); }
+                50%{ background-image:url(peakpx\ \(1\).jpg); }
+                75%{ background-image:url(peakpx\ \(2\).jpg); }
+            }
+            ul{
+                background: black;
+                margin: 0px;
+            }
+            li{
+                display: inline-block;
+                padding: 20px 70px 20px;
+                color:white;
+                font-size: 22px;
+            }
+            li:hover{
+                background: orange;
+                color: green;
+                cursor: pointer;
+            }
+            #banner{
+                height:500px;
+                background-size:50% 100%;
+                background-image:url(cute-kakashi-wallpaper\ \(1\).webp);
+                animation:mybanner;
+                animation-duration:10s;
+                animation-iteration-count:infinite;
+             }
+             #container{
+                width: 80%;
+                margin:auto;
+                display:grid;
+                grid-template-columns: 25% 75%;
+             }
+             h1{
+                color: blue;
+                font-size:65px;
+                text-align: center;
+                margin:4px;
+             }
+             aside, article{
+                margin: 20px;
+                padding: 5px;
+             }
+             aside{
+                box-shadow: 0px 0px 3px grey;
+                padding-left: 30px;
+                padding-top: 5px;
+                color: red;
+             }
+             aside p{
+                font-size: 25px;
+                line-height: 60px;
+                color: black;
+                transition:padding-left 1s;
+             }
+             aside p:hover{
+                cursor:pointer;
+                color:blue;
+                padding-left: 30px;
+
+             }
+             #myarticle{
+                display: inline-block;
+                margin:2%;
+                padding: 2%;
+                width: 24%;
+                box-shadow: 0px 0px 5px grey;
+                text-align: justify;
+             }
+             a{
+                display: block;
+                margin: 5px;
+                color:red;
+             }
+             footer{
+                min-height: 200px;
+                padding: 20px 10% 20px;
+                background-color: darkcyan;
+                color: white;
+                font-size:18px;
+                display:grid;
+                grid-template-columns: 80% 20%;
+             }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li> Home </li>
+            <li> About Us </li>
+            <li> Contact Us </li>
+            <li> Our Services </li>
+            <li> Login </li>
+            <li> Create Account </li>
+        </ul>
+        <div id="banner"> </div>
+        <section id="container">
+            <aside>
+                <p> Website Design </p>
+                <p> UI Design </p>
+                <p> Digital Marketing </p>
+                <p> SEM </p>
+                <p> SMM </p>
+                <p> Content Writing </p>
+            </aside>
+            <article>
+                <h1> Recent Post </h1>
+                <p id="myarticle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Ducimus sit dolore sapiente nostrum odio, quisquam veniam et.
+                     Molestias ad nobis non laudantium adipisci cupiditate sunt architecto fugiat, expedita alias! Distinctio!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos reprehenderit illum nam possimus ipsam voluptates inventore, repellendus autem fugit dignissimos eveniet, esse magnam reiciendis corporis similique error suscipit beatae. 
+                    <a href=""> Read More...</a> </p>
+
+                    <p id="myarticle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ducimus sit dolore sapiente nostrum odio, quisquam veniam et.
+                         Molestias ad nobis non laudantium adipisci cupiditate sunt architecto fugiat, expedita alias! Distinctio!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos reprehenderit illum nam possimus ipsam voluptates inventore, repellendus autem fugit dignissimos eveniet, esse magnam reiciendis corporis similique error suscipit beatae. 
+                        
+                        <a href=""> Read More...</a> </p>
+
+                    <p id="myarticle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Ducimus sit dolore sapiente nostrum odio, quisquam veniam et.
+                             Molestias ad nobis non laudantium adipisci cupiditate sunt architecto fugiat, expedita alias! Distinctio!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos reprehenderit illum nam possimus ipsam voluptates inventore, repellendus autem fugit dignissimos eveniet, esse magnam reiciendis corporis similique error suscipit beatae. 
+                           
+                            <a href=""> Read More...</a> </p>
+            </article>
+        </section>
+        <footer>
+             <p> Contact - 8520741963 </p>
+             <p> e-mail- help@urwebsite.com </p>
+        </footer>
+    </body>
+</html>

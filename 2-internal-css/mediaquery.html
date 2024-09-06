@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{ margin:0px; }
+            @keyframes mybanner {
+                25%{ background-image:url(cute-kakashi-wallpaper\ \(1\).webp); }
+                50%{ background-image:url(peakpx\ \(1\).jpg); }
+                75%{ background-image:url(peakpx\ \(2\).jpg); }
+            }
+             #banner{
+                height:450px;
+                background-size:50% 100%;
+                background-image:url(cute-kakashi-wallpaper\ \(1\).webp);
+                animation:mybanner;
+                animation-duration:10s;
+                animation-iteration-count:infinite;} 
+            section{
+                background:darkcyan;
+                padding:50px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+
+            section div{
+                color: yellow;
+                font-size: 45px;
+                margin: 40px 0px 40px;
+            }
+            
+            @media screen and (min-width:1px) and (max-width:650px){
+                section{ grid-template-columns: auto;}
+                section div{ margin:20px 0px 20px; font-size:35px;}
+                #banner{ height:250px;}
+            }
+            
+            @media screen and (min-width:650px) and (max-width:900px){
+                section{ grid-template-columns: auto auto;}
+                section div{ margin:20px 0px 20px; font-size:40px;}
+                #banner{ height:300px;}
+            }
+            @media screen and (min-width:900px) and (max-width:1200px){
+                section{ grid-template-columns: auto auto;}
+                section div{ margin:20px 0px 20px;}
+                #banner{ height:350px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner"></div>
+        <section>
+            <div> Bangalore </div>
+            <div> Mangalore </div>
+            <div> Mumbai </div>
+            <div> Pune </div>
+            <div> Chennai </div>
+            <div> Goa </div>
+            <div> Kashmir </div>
+            <div> Kolkata </div>
+            <div> Delhi </div>
+            <div> Leh Ladahak </div>
+            <div> Los Vegas </div>
+            <div> Los Angeles </div>
+        </section>
+    </body>
+</html>

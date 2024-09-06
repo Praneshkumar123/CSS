@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+
+      </style>
+    </head>
+    <body>
+         <h1> </h1>
+    </body>
+            #ad{
+                background:darkslategray;
+                width:20%;
+                float:left;
+                height:729px;
+            }
+            table{
+                float: right;
+                margin:300px 20px 100px ;
+            }
+            #th{
+                font-size:25px;
+                text-align-last: right;
+            }
+            #td{
+                color:gray;
+                text-align-last: right;
+            }
+          a{
+            border:1px solid white;
+            text-decoration: none;
+            padding:15px;
+            color: white;
+            font-size:10px;
+          }
+
+
+ <div id="ad">
+            
+            <table> 
+                <tr>
+                <th id="th"><font color="white"> A SAMPLE <br/> BLOG</font> </th>
+            </tr>
+            
+                <td id="td"> Creating a blog <br/>
+                layout Using pure</td></tr>
+                <tr>
+                <td><br/><a id="vg">PURE</a>
+                    <a id="vg">YUI LIBARY</a></td></tr>
+                <table>
+           </div>
+           <div id="db">
